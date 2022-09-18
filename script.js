@@ -15,7 +15,6 @@ const decideWinner = function (userScore, computerScore) {
 
     score.innerHTML = `User- ${userScore} : ${computerScore} -Computer`
     winner.innerHTML  = userScore > computerScore ? `You win!` : `You lose...`
-
 }
 
 
@@ -67,6 +66,8 @@ const play = function () {
             counter++;
         }
 
+        // console.log(`User- ${player} : ${computer} -Computer`)
+        // player > computer ? console.log(`You win!`) : console.log(`You lose...`)
         decideWinner(player, computer)
 }
 
