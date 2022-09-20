@@ -31,39 +31,39 @@ const playRound = function () {
     switch(playerSelection) {
         case 'rock':
             if (computerSelection === 'rock'){
-                console.log('Tie!')
+                window.alert('Tie!')
                 return 'tie'
             } else if (computerSelection === 'paper') {
-                console.log('You lose. Paper beats rock...')
+                window.alert('You lose. Paper beats rock...')
                 return 'computer'
             } else {
-                console.log('You win! Rock beats scissors!')
+                window.alert('You win! Rock beats scissors!')
                 return 'player'
             }
         case 'paper':
             if (computerSelection === 'rock'){
-                console.log('You win! Paper beats rock!')
+                window.alert('You win! Paper beats rock!')
                 return 'player'
             } else if (computerSelection === 'paper') {
-                console.log('Tie!')
+                window.alert('Tie!')
                 return 'tie'
             } else {
-                console.log('You lose. Scissors beats paper...')
+                window.alert('You lose. Scissors beats paper...')
                 return 'computer'
             }
         case 'scissors':
             if (computerSelection === 'rock'){
-                console.log('You lose. Rock beats scissors...')
+                window.alert('You lose. Rock beats scissors...')
                 return 'computer'
             } else if (computerSelection === 'paper') {
-                console.log('You win! Scissors beats paper!')
+                window.alert('You win! Scissors beats paper!')
                 return 'player'
             } else {
-                console.log('Tie!')
+                window.alert('Tie!')
                 return 'tie'
             }
         default:
-            console.log('Please enter a valid choice')
+            window.alert('Please enter a valid choice')
     }
 }
 
